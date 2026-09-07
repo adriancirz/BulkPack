@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<ProjectReference Include="..\ERP_IT13.Domain\ERP_IT13.Domain.csproj" />
+		<ProjectReference Include="..\ERP_IT13.Infrastructure\ERP_IT13.Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.*" />
+		<PackageReference Include="MaterialDesignColors" Version="5.2.1" />
+		<PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.*">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.*" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.*" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.*" />
+		<PackageReference Include="NuGet.Packaging" Version="6.14.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+</Project>
